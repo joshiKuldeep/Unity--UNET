@@ -15,6 +15,10 @@
  > 2. Dealing with [Latency](https://en.wikipedia.org/wiki/Latency_(engineering)).
  > *  Interpolation and its working methodology. P=P0 + V0T + 1/2*A0T^2
  > *  The Netwrok Transform.(https://docs.unity3d.com/Manual/class-NetworkTransform.html)
-
+ > 3. Customising Player Character
+ > *  When you are in game mode, both the player prefab in local and server side instantiates on same position, so to avoid it follow the steps:
+ > * 1. Create two or as many as gameobjects as the players connected throughout the network, attach network identity and network starting position to them.
+ > * 2. Drag their references to Network Manager gameobject's spawn position section.
+ > * [Syncvar](https://docs.unity3d.com/ScriptReference/Networking.SyncVarAttribute.html)
 #### Reference links
 ###### [Udemy](https://www.udemy.com/unet_intro/) 
